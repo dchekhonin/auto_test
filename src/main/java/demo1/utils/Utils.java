@@ -1,5 +1,5 @@
 
-package demo1;
+package demo1.utils;
 import com.google.common.base.Function;
 import org.openqa.selenium.*;
 import org.openqa.selenium.NoSuchElementException;

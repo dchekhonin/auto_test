@@ -2,15 +2,13 @@ package demo1;
 
 
 
-import org.omg.CosNaming.NamingContextExtPackage.StringNameHelper;
-import org.openqa.selenium.UnableToSetCookieException;
+import demo1.utils.Utils;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.By;
 import java.util.List;
-import java.util.ArrayList;
 
 
 public class CreateNewRebatePage {

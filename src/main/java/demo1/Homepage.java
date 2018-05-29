@@ -1,13 +1,10 @@
 package demo1;
 
-import org.openqa.selenium.By;
+import demo1.utils.Utils;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-
-import java.util.List;
-import java.util.concurrent.TimeUnit;
 
 
 public class Homepage {
