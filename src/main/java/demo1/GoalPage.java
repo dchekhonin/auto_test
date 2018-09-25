@@ -26,7 +26,7 @@ public class GoalPage {
 
         driver.switchTo().defaultContent();
         Utils.sleep(5000);
-        driver.switchTo().frame(0);
+        driver.switchTo().frame(1);
 
         Utils.click(driver,finalSaveNewGoalButton);
 

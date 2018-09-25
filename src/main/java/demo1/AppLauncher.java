@@ -14,7 +14,10 @@ public class AppLauncher {
 //    @FindBy(css = "a[title *= 'Rebate Programs']")
 //    private WebElement rebatesLink;
 
-    @FindBy(css = ".appTileTitle[title = 'Rebate Management']")
+//    @FindBy(css = ".appTileTitle[title e 'Rebate Management']")
+//    private WebElement rebateManagementLink;
+
+    @FindBy(xpath = ".//*[text()='Rebate Management']")
     private WebElement rebateManagementLink;
 
     public AppLauncher(WebDriver driver) {
@@ -24,6 +27,7 @@ public class AppLauncher {
 
     public Homepage rebateManagementLink() {
         Utils.click(driver,rebateManagementLink);
+        Utils.sleep(2000);
         return new Homepage(driver);
 
     }

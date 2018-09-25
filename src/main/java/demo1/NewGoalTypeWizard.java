@@ -1,6 +1,7 @@
 package demo1;
 
 import demo1.utils.Utils;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -42,7 +43,7 @@ public class NewGoalTypeWizard {
 
         driver.switchTo().defaultContent();
         Utils.sleep(5000);
-        driver.switchTo().frame(0);
+        driver.switchTo().frame(1);
 
         Utils.click(driver,selectNewGoalTypeField);
         Utils.click(driver,selectNewGoalType);

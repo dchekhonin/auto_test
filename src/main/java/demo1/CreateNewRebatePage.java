@@ -30,7 +30,7 @@ public class CreateNewRebatePage {
     @FindBy(xpath = "(//td[contains(@class, 'uiDayInMonthCell')]) [7]")
     private WebElement selectStartDateDayInMonth;
 
-    @FindBy(xpath = "(//div/div[1]/div[1]/h2) [2]")
+    @FindBy(xpath = "(//div/div[1]/div[1]/h2) [3]")
     private WebElement monthName;
 
     @FindBy(xpath = "//select[contains(@class,'slds-select picklist__label')]")
@@ -42,7 +42,8 @@ public class CreateNewRebatePage {
     @FindBy(xpath = "(//a[@class='datePicker-openIcon display']) [2]")
     private WebElement endDatePicker;
 
-    @FindBy(css = "input[placeholder *= 'Search Accounts']")
+//    @FindBy(css = "input[placeholder *= 'Search Accounts']")
+    @FindBy(xpath = ".//*[@title='Search Accounts']")
     private WebElement payeeInput;
 
     @FindBy(xpath = "//span[contains(text(),'Payment Period')]/../..//a")
@@ -147,10 +148,10 @@ public class CreateNewRebatePage {
         return this;
     }
 
-    public CreateNewRebatePage setPayee(String PayeeName) {
+    public CreateNewRebatePage setPayee(String payeeName) {
 
-        Utils.click(driver,payeeInput);
-        Utils.click(driver,By.xpath("((.//span[contains(text(),'Payee')]) [3])/../..//li[1]"));
+        Utils.typeInto(driver, payeeInput, payeeName);
+        Utils.click(driver,By.xpath("//li//div[@title='Avnet']"));
         return this;
     }
 

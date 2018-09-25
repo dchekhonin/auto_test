@@ -29,7 +29,10 @@ public class RebateListPage {
 //    @FindBy(xpath = ".//*[contains(@class,'slds-cell-edit')]/../..//div[contains (@class,'forceVirtualActionMarker')]")
     private WebElement actionButton;
 
-    @FindBy(xpath = "//div[@class = 'branding-actions actionMenu']/a[. = 'Delete'] ")
+//    @FindBy(xpath = "//div[@class = 'branding-actions actionMenu']/a[. = 'Delete'] ")
+//    private WebElement deleteButton;
+
+    @FindBy(xpath = "//div[@class = 'branding-actions actionMenu']//li[2]")
     private WebElement deleteButton;
 
     @FindBy(xpath = ("//tr[contains(., 'Dimatest')]" ))
@@ -86,21 +89,6 @@ public class RebateListPage {
         }
         while (rebateLineInList.getText().isEmpty());
 
-//
-//        for(int i=0; i<0; i++){
-//
-//
-//
-////            System.out.println(myDatesWebElementsList.get(i).getText());
-//            myRebatesWebElementsList.get(i).click();
-//            deleteButton.findElement(By.xpath())
-//            Utils.click(driver,deleteButton);
-
-
-//                System.out.println(myRebatesWebElementsList.get(i).getText());
-//                myRebatesWebElementsList.get(i).click();
-
-//                break;
 
             return this;
 

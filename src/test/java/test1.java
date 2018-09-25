@@ -40,7 +40,7 @@ public class test1 {
                 .selectRebateType()
                 .nextButtonClickNewRebate()
                 .setRebateName()
-                .setRebateStartMonthFromPicker("MAY")
+                .setRebateStartMonthFromPicker("JUNE")
                 .setYear("2017")
                 .setExactDate("6")
                 .setRebateEndMonthFromPicker("AUGUST")
